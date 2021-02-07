@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="../css/style.css">
+        <title>Le Molière Express</title>
+    </head>
+
+    <body>
+        <div class="wrap">
+            <h1></h1>
+
+            <div class="content">
+                <h2>Recíbelo en tu e-mail</h2>
+
+                <form method="post" action="../php/registraremails.php">
+                    <ul>
+                        <li><input type="text" name="nombre" placeholder="Nombre"></li>
+                        <li><input type="text" name="apellidos" placeholder="Apellidos"></li>
+                        <li><input type="email" name="email" placeholder="Correo electrónico"></li>
+                        <li><input type="text" name="calidad" placeholder="Calidad (alumno, padre...)"></li>
+                        <li><input id="submit" type="submit"></li>
+                    </ul>
+                </form>
+
+                <ul id="idiomas">
+                    <li class="idioma"><a href="../fr/recevoir-email.html">FR</a></li>
+                    <li class="idioma">|</li>
+                    <li class="idioma"><a href="#">ES</a></li>
+                    <li class="idioma">|</li>
+                    <li class="idioma"><a href="../en/receive-email.html">EN</a></li>
+                </ul>
+            </div>
+
+            <aside>
+                <h2>Navegar</h2>
+                <ul id="opciones">
+                    <li><a href="../es/index.html">Inicio</a></li>
+                    <li><a href="../es/leer-edicion.html">Leer edición</a></li>
+                    <li><a href="../es/conocenos.html">Conócenos</a></li>
+                    <li><a href="../es/participa.html">Participa</a></li>
+                    <li><a href="mailto:moliereexpress#molierezaragoza.org?Subject=Contacto%20desde%20la%20página%20web">Contacto</a></li>
+                    <li><a href="../es/recibelo-email.html">Recíbelo en tu e-mail</a></li>
+                </ul>
+            </aside>
+        </div>
+    </body>
+</html>
