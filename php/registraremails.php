@@ -19,9 +19,9 @@ $calidad = $_POST['calidad'];
 $sql="INSERT INTO recibir_periodico (nombre, apellidos, email, calidad) VALUES ('$nombre', '$apellidos', '$email', '$calidad')";
 
 if($conexion->query($sql)==true){
-    echo "<script type='text/javascript'>";
-    echo "window.history.back(-1)";
-    echo "</script>"; 
+echo "<script type='text/javascript'>";
+echo "window.history.back(-1)";
+echo "</script>"; 
 }
 }
 ?>
