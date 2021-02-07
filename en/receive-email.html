@@ -12,6 +12,16 @@
             <div class="content">
                 <h2>Receive it in your e-mail</h2>
 
+                <form method="post" action="../php/registraremails.php">
+                    <ul>
+                        <li><input type="text" name="nombre" placeholder="Name"></li>
+                        <li><input type="text" name="apellidos" placeholder="Surname"></li>
+                        <li><input type="email" name="email" placeholder="E-mail adress"></li>
+                        <li><input type="text" name="calidad" placeholder="Quality (student, parent...)"></li>
+                        <li><input id="submit" type="submit" value="Send"></li>
+                    </ul>
+                </form>
+
                 <ul id="idiomas">
                     <li class="idioma"><a href="../fr/recevoir-email.html">FR</a></li>
                     <li class="idioma">|</li>

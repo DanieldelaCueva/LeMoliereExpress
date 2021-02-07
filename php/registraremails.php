@@ -11,7 +11,7 @@ die("CONEXION FALLIDA " . $conexion->connect_error);
 }
 
 if(isset($_POST['nombre']) and isset($_POST['apellidos']) and isset($_POST['email']) and isset($_POST['calidad'])){
-$texto = $_POST['texto'];
+$nombre = $_POST['nombre'];
 $apellidos = $_POST['apellidos'];
 $email = $_POST['email'];
 $calidad = $_POST['calidad'];
@@ -19,7 +19,9 @@ $calidad = $_POST['calidad'];
 $sql="INSERT INTO recibir_periodico (nombre, apellidos, email, calidad) VALUES ('$nombre', '$apellidos', '$email', '$calidad')";
 
 if($conexion->query($sql)==true){
-<script>window.history.back();<script>
+    echo "<script type='text/javascript'>";
+    echo "window.history.back(-1)";
+    echo "</script>"; 
 }
 }
 ?>
