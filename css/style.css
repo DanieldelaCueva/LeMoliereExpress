@@ -149,3 +149,9 @@ form li input{
     font-size: 30;
 }
 
+iframe{
+    margin-left: 4%;
+    height: 80%;
+    width: 90%;
+}
+
