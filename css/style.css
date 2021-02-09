@@ -48,19 +48,20 @@
 }
 
 body{
-    background: url(../img/background.jpg);
+    background: url(../img/fondo.png);
     font-family: sans-serif;
 }
 
 .wrap{
-    width: 80%;
+    width: 85%;
     margin: auto;
-    height: 80%;
+    height: 85%;
 }
 
 aside{
-    background: gray;
+    background: rgba(190, 198, 200, 0.7);
     border:2px solid black;
+    border-radius: 25px;
     float: left;
     width: 20%;
     height: 100%;
@@ -68,8 +69,9 @@ aside{
 }
 
 .content{
-    background-color: whitesmoke;
+    background-color: rgba(255, 255, 255, 0.7);
     border: 2px solid black;
+    border-radius: 25px;
     float: right;
     width: 79%;
     height: 100%;
@@ -79,7 +81,8 @@ aside{
 
 h1{
     background: url(../img/logo_web.png) no-repeat;
-    
+    border-radius: 25px;
+    margin-top: 2%;
     height: 40px;
     width: 400px;
     border: 2px solid black;
@@ -97,8 +100,8 @@ ul{
 #idiomas{
     text-decoration: none;
     position: absolute;
-    bottom: 14%;
-    right: 12%;
+    bottom: 7.5%;
+    right: 10%;
 }
 
 #idiomas li:hover{
@@ -107,6 +110,7 @@ ul{
 
 h2{
     padding-left: 40px;
+    font-size: 30;
 }
 
 h3{
@@ -114,9 +118,10 @@ h3{
 }
 
 #opciones li{
-    font-size: 22;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    font-size: 30;
+    margin-top: 14%;
+    margin-bottom: 14%;
+    margin-left: 1%;
 }
 
 aside ul a{
@@ -126,7 +131,11 @@ aside ul a{
 
 aside ul a:hover{
     text-decoration: underline;
-    font-size: 28px;
+    font-size: 40;
+}
+
+form{
+    margin-top: 4%;
 }
 
 form li{
@@ -134,9 +143,14 @@ form li{
 }
 
 form li input{
-    font-size: 20;
-    width: 400px;
-    height: 50px;
+    font-size: 30;
+    width: 800px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.30);
+}
+
+#submit{
+    background-color: rgba(182, 237, 255, 0.50);
 }
 
 #submit:hover{
@@ -155,3 +169,11 @@ iframe{
     width: 90%;
 }
 
+.bancoediciones{
+    display: inline;
+}
+
+.listaediciones{
+    list-style: none;
+    display: inline;
+}
