@@ -189,3 +189,11 @@ iframe{
     list-style: none;
     display: inline;
 }
+
+.img_home{
+    max-width: 80%;
+    max-height: 80%;
+    margin-left: 10%;
+    margin-top: 2%;
+    opacity: 80%;
+}
