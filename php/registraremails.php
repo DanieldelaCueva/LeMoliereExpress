@@ -1,8 +1,8 @@
 <?php
-$servidor="sql7.freemysqlhosting.net";
-$user="sql7390835";
-$password="lDTffr2xsY";
-$db="sql7390835";
+$servidor="database-1.czgzr1r2fckf.us-east-2.rds.amazonaws.com";
+$user="client";
+$password="dbclient";
+$db="lemoliereexpress";
 
 $conexion= new mysqli($servidor, $user, $password, $db);
 
@@ -16,7 +16,7 @@ $apellidos = $_POST['apellidos'];
 $email = $_POST['email'];
 $calidad = $_POST['calidad'];
 
-$sql="INSERT INTO recibir_periodico (nombre, apellidos, email, calidad) VALUES ('$nombre', '$apellidos', '$email', '$calidad')";
+$sql="INSERT INTO recibiremail (nombre, apellidos, email, calidad) VALUES ('$nombre', '$apellidos', '$email', '$calidad')";
 
 if($conexion->query($sql)==true){
 echo "<script type='text/javascript'>";
